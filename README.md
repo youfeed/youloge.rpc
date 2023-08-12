@@ -1,2 +1,14 @@
-# youloge.rpc
-A lightweight remote procedure call protocol with routing authentication.
+# Youloge.RPC 规范 
+创建时间：2023-08-13 02:29:24 
+更新时间：2023-08-13 02:29:31 
+作者：Micateam
+
+# 概述
+Youloge.RPC 是一个有状态，需要路由匹配的，轻量级远程调用协议。可以非常适合用在前端-后端，后端-后端，代理-节点等方面使用。
+
+# 约定
+- 主域名 `https://github.com/`
+- 请求路径 `path`
+- 请求方式 `POST`
+- 请求头 `Ukey` | 'Signer'
+- 请求体 `{"method":"","params":{}[]}`
